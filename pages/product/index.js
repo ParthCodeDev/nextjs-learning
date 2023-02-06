@@ -9,7 +9,7 @@ function ProductList() {
         <div>
             <h1>Product List page</h1>
             {listProject.map((item, index) => (
-                <li>
+                <li key={index}>
                     <Link href={`/product/${item.id}`} key={index}>
                         {item.name}
                     </Link>
